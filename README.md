@@ -14,7 +14,8 @@ https://Joserubher.github.io/To-Do-List/
 
 ## 🖼️ Preview
 
-(preview.png)
+![Preview del proyecto](preview.png)
+
 
 ---
 
