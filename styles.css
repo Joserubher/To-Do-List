@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Regular Poppins";
+    src: url("fonts/Poppins-Regular.ttf")
+}
+
+:root {
+    --dark-orange: #a65238;
+    --rose: #ff8982;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Regular Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #ece9e6, var(--white));
+}
+
+.container {
+    position: relative;
+    top: 50px;
+    width: 500px;
+    height: 550px;
+    box-shadow: 3px 3px 15px -2px rgba(0, 0, 0, 0.19);
+    padding: 50px;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: var(--dark-orange);
+}
+
+.container .inputTarea {
+    width: 100%;
+    outline: none;
+    padding: 10px 20px;
+    border: 2px solid var(--dark-orange);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.container ul {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.container ul li{
+    background: #ffd3bf;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--dark-orange);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container ul li.completed {
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    appearance: none;
+    border: 2px solid var(--rose);
+    background: var(--white);  
+    border-radius: 100%;
+    outline: none; 
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background: var(--rose);
+}
+
+input[type="checkbox"]:checked::before {
+    content: '✓';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    font-size: 1.1em;
+    text-align: center;
+    color: var(--white);
+}
+
+.delete {
+    display: flex;
+    padding: 3px;
+    background: #d10000;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.delete ion-icon {
+    color: var(--white);
+}
+
+p {
+    width: 250px;
+}
